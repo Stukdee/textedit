@@ -139,8 +139,7 @@ function Savee(){
     saveAs(blob, nemete);
 }
 function Huancun(){
-    document.getElementById("texte").innerHTML = '';
-    alert("缓存清理成功");
+    open("https://github.com/Stukdee/textedit/");
 }
 function Runn(){
     var strCode = document.getElementById("texte").value;
