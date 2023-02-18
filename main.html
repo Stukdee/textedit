@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" oncontextmenu=self.event.returnValue=false style="user-select: none;">
+    <link rel="Shortcut Icon" href="textt.svg" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <title>文本编辑</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+	<body style="background-color: #1E1E1E;">
+           <script src="https://cdn.bootcss.com/vue/2.6.11/vue.min.js"></script>
+           <script src="https://lab.magiconch.com/nbnhhsh/nbnhhsh.user.js"></script>
+		<div id="box">
+            <div id="UI_Button" style="top:100%;">
+                <button onclick="Savee()" id="savee">
+                <svg width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save">
+                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                    <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                    <polyline points="7 3 7 8 15 8"></polyline>
+                </svg></button>
+                <button onclick="Huancun()" id="huancun">
+                <svg width="15px" height="15px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke="currentColor" stroke-width="2"
+                        d="M10,4 C10,2.8954305 10.8954305,2 12,2 C13.1045695,2 14,2.8954305 14,4 L14,10 L20,10 L20,14 L4,14 L4,10 L10,10 L10,4 Z M4,14 L20,14 L20,22 L12,22 L4,22 L4,14 Z M16,22 L16,16.3646005 M8,22 L8,16.3646005 M12,22 L12,16.3646005" />
+                </svg>
+                </button>
+                <button onclick="Runn()" id="runn">▷</button>
+                <button onclick="Closell()" id="chacha">×</button>
+                <button onclick="Da()" id="quanping">■</button>
+                <button onclick="Xiao()" id="zuixiaohua">-</button>
+                <div id="anjian" style="transition: 0.5s;position: absolute;border: #ff77008f inset;border-radius: 0px 0px 10px 10px;color:#ff77008f;width:99%;height:6%;top: 92%;text-align: center;display: none;"></div>
+            </div>
+            <div id="titlee" style="color: black;text-align: center;">
+                <input id="tti" style="background-color: rgba(255, 255, 255, 0);border: none;outline: none;">
+            </div>
+                <textarea placeholder="空空如也~" id="texte" style="resize: none;outline: none;width: 492px;background-color: rgba(255, 255, 255, 0);border: none;color: black;height: 220px;overflow-x: auto;"></textarea>
+        </div>
+        <button onclick="Openw()" id="open">打开</button>
+        <div id = 'textareaCoded' style="transition: 1s;border: green solid 2px; float: left;overflow-x: auto;box-shadow: 0 0 5px 2px green;" wrap="virtual">
+            <p id = 'html_code'></p>
+        </div>
+        <br><br>
+        <script src="main.js"></script>
+	</body>
+</html>
