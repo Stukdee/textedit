@@ -25,10 +25,22 @@
     background-color: gray;
     transition: 0.3s ease-in-out;
 }
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255,255,255,0.8);
+    border-radius: 10px;
+    background-color: gray;
+}
+::-webkit-scrollbar-thumb:active{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    background-color: gray;
+}
 ::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-    background-color: rgba(82, 82, 82,0.2);;
+    background-color: rgba(82, 82, 82,0.2);
 }
 body{
     background:url("https://bing.shangzhenyang.com/api/1080p")no-repeat center fixed;
